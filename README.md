@@ -48,6 +48,8 @@
  2. Navigate to the directory where the repository was downloaded
  3. Type `python PredictTest.py`
     3. If needed feel free to change the values for the query
+ ## Demonstration
+ An example of the run can be seen [here](https://drive.google.com/file/d/1GYHSnt4kjrok5_YWjQTfuMpZVzAfncNf/view?usp=drive_link)
 
 
  ## Sever deployment
