@@ -1,3 +1,6 @@
+"""
+This notebook is designed to test the predict.py script
+"""
 import requests
 url = 'http://localhost:9696/predict'
 
