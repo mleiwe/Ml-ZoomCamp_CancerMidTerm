@@ -1,39 +1,53 @@
 # Ml-ZoomCamp_CancerMidTerm
  ML ZoomCamp midterm project
- ## Introduction
+# Introduction
  Tumours are abnormal growths in the body. While not pleasant there are different risks associated with the different types.
 
- ### Types of Tumours
+ ## Types of Tumours
  There are (very) broadly two types of tumours
  * Benign tumours: These are not necessarily dangerous. Classic examples are skin moles, and lipomas (a small bump of excess fat cells). To cut a long story short they don't cause cancer.
  * Malignant tumours: These are the dangerous ones which cause cancer, and can metastasise (spread) to other parts of the body. In non-clinical terms, these need to be removed ASAP.
 
- ### Treatment
+ ## Treatment
  Typically these can either be surgically removed, and/or reduced by radiotherapy/chemotherapy.
 
  While arduous for the patient, these therapies/treatments are most effective when started early. Therefore early and effective diagnosis is essential.
 
- ### Diagnosis
+ ## Diagnosis
  Typically biopsies (cutting out a small sample) of the tumour are taken and then imaged using a microscope where the technician determines whether the tumour is benign (safe) or malignant. 
  
  This is an important step, as mis-classification as benign (False negative) could delay effective treatment. While mis-classifying as malignant (False positive) could put the patient through unnecessary medical procedures.
 
- ### Challenge
+ ## Challenge
  Manual classification of tumour cells is extremely time consuming. If we can apply machine learning techniques to increase both speed and accuracy of detection it will improve patient outcomes.
 
  To this end, the wisconsin data set has collated tabulated data that describes the spatial properties of both malignant and benign tumour cell nuclei. This will form the basis of our model.
 
- ## Dataset
+# Dataset
  Features are computed from a digitized image of a fine needle aspirate (FNA) of a breast mass. They describe characteristics of the cell nuclei present in the image.
 
  * This is stored as `data.csv` in the repository. 
  * A text description is available as `data_descriptions.md`. 
  * The process of extracting this data is described [here](https://archive.ics.uci.edu/dataset/17/breast+cancer+wisconsin+diagnostic)
 
- ## Notebook
+# Notebook
  ### How to run
  ### Key findings
 
- ## How to deploy locally
+# How to deploy locally
+ You can run this service locally using the docker file (provided you have docker installed).
+ 
+ ## Build the machine
+ 1. Open a terminal
+ 2. Change directory to where you have downloaded the app
+ 3. Build the docker with `docker build -t cancer_prediction .`
+ 4. Run the docker with `docker run -it --rm -p 9696:9696 cancer_prediction
+
+ ## Query the model
+ 1. Open a new terminal
+ 2. Navigate to the directory where the repository was downloaded
+ 3. Type `python PredictTest.py`
+    3. If needed feel free to change the values for the query
+
 
  ## Sever deployment

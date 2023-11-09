@@ -1,5 +1,6 @@
 ## Libraries required
 import pandas as pd
+import pickle
 
 from flask import Flask
 from flask import request
